@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <main class="state-start ">
+  <img src="images/icon-star.svg" id="icon-star" alt="A Yellow Star">
+  <h1>How did we do?</h1>
+
+  <p>
+    Please let us know how we did with your support request. All feedback is appreciated
+    to help us improve our offering!
+  </p>
+
+  <div class="numbers-container">
+  <div class="style-number" >1</div>  <div class="style-number">2</div> <div class="style-number">3</div> <div class="style-number">4</div> <div class="style-number">5</div>
+  </div>
+  
+  <button class="submit-btn">S u b m i t</button>
+  </main>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <section class="thank-you hide">
+    <img src="images/illustration-thank-you.svg" id="illustration" alt="A cellphone photo, illustration thank you">
+    <br>
+    <div class="selected">You selected <span id="rating">5</span> out of 5</div>
+
+  <h1>Thank you!</h1>
+
+  <p>
+    We appreciate you taking the time to give a rating. If you ever need more support,
+    don’t hesitate to get in touch!
+    <button class="rate-again">Rate Again</button>
+  </p>
+  </section>  
+  <!-- Thank you state end -->
+
+  
+  
+  <script src="index.js"></script>
+</body>
+</html>
